@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best team of the month</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}"
+</head>
+<body>
+  <div class="container my-5">
+      {% include 'header.html' %}
+    <h1 class="text-center my-5">Best team of the month</h1>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/474x/3a/78/a6/3a78a673e8c76633fbf19c2143a3070e.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ghadeer Sultan</h5>
+            <p class="card-text">1</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/474x/b3/38/6f/b3386fd8fd2c68d7bde6b49424f89a05.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Zainab Alwan</h5>
+            <p class="card-text">2</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://i.pinimg.com/474x/de/9d/16/de9d16d4c6b947c530f2c7c321dd20cb.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">WaadMakeup</h5>
+            <p class="card-text">3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      {% include 'footer.html' %}
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

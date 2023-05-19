@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<style>
+  body{
+    color: rgb(23, 15, 25);
+        background-color: rgb(231, 213, 159);
+    line-height: 1.9em;} 
+  </style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">My Faces</a>
+
+  </nav>
+
+  <div class="container my-5">
+    <h1>Edit Faces Post</h1>
+      <a href="{% url 'posts' %}" class="btn btn-primary mb-3">Posts</a>
+    <form method="post">
+      {% csrf_token %}
+      <div class="form-group">
+        {{ form.title.label_tag }}
+        {{ form.title }}
+      </div>
+      <div class="form-group">
+        {{ form.content.label_tag }}
+        {{ form.content }}
+      </div>
+      <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+  </div>
+
+  
+</body>
+</html>

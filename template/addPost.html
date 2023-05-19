@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<style>
+  body{
+    color: rgb(23, 15, 25);
+        background-color: rgb(231, 213, 159);
+    line-height: 1.9em;} 
+  </style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'posts' %}">Admin Panel</a>
+
+  </nav>
+
+  <div class="container my-5">
+    <h1>Create New Faces Post</h1>
+    <a href="{% url 'posts' %}" class="btn btn-primary mb-3">Posts</a>
+
+    <form method="post">
+      {% csrf_token %}
+      <div class="form-group">
+        {{ form.title.label_tag }} <br>
+        {{ form.title }}
+      </div>
+      <div class="form-group">
+        {{ form.content.label_tag }} <br>
+        {{ form.content }}
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <footer class="bg-light text-center py-3">
+    <p>inspiration &copy;
+      {% now "Y" %} My Faces. All rights reserved.
+    </p>
+  </footer>
+
+  
+</body>
+</html>

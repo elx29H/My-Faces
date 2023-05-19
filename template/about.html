@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Our Faces</title>
+  <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<style>
+body{
+  color: rgb(23, 15, 25);
+      background-color: rgb(236, 112, 181);
+  line-height: 1.9em;} 
+</style>
+<body>
+
+
+  <div class="container my-5">
+      {% include 'header.html' %}
+    <div class="row mt-5">
+      <div class="col-md-8">
+        <h1>About Our Faces</h1>
+        <p class="lead">You loved us as Wojooh, you'll love us as Faces! Faces is the leading beauty retailer with the latest fragrances, skincare and makeup in the region.</p>
+        <p> Being the leading beauty retailer in the region has allowed us to offer the most luxurious brands.</p>
+        <p>Faces will continue to grow and develop through our continuous expertise, innovation and extraordinary shopping experience. Our core values always remain to be authentic, caring and inspiring to you!</p>
+        <p>We care about you and are committed to serving your needs in the most unparalleled way. We offer you the most exclusive perfumes from top brands such as Yves Saint Laurent, </p>
+        <p>Dior and more. Pamper your skin with a wide range of skin care products, you can now solve your skin concerns with your skin care routine using our latest products from Lancer, Clinique, Clarins. </p>
+        <p>We provide you with the hottest makeup products, trends, and our beauty experts to answer all of your beauty questions. We come from a place that understands your beauty needs. Beauty is all about sharing tips, inspiration, and expertise, </p>
+        <p>and we've truly evolved into a brand that has transcended the traditional retailer. The beauty range itself is becoming more complex being the fastest growing retail sector and we have embraced these changes and trends to stay ahead.</p>
+      </div>
+
+    </div>
+      {% include 'footer.html' %}
+  </div>
+
+  <!-- Bootstrap JS (optional) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

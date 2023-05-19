@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <title>{{ post.title }}</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+
+  <div class="container my-5">
+    {% include 'header.html' %}
+    <h1 class="mt-5">{{ post.title }}</h1>
+
+    <p class="mb-5">{{ post.content }}</p>
+    {% include 'footer.html' %}
+  </div>
+
+
+
+  
+</body>
+</html>
